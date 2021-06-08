@@ -1,6 +1,17 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
+* {
+	/* font-family: 'Poppins', sans-serif; */
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+    scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+}
+
+/* colors */
 :root {
     --first-color: #0396A6;
     --dark-color: #000;
@@ -38,14 +49,15 @@
             box-sizing: border-box;   
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
-body {
+/* body {
     margin: 0;
+    padding:0;
     font-family: var(--body-font);
-}
+} */
 
 h1,h2,h3, p {
     margin: 0;
@@ -239,6 +251,11 @@ img {
     color: var(--first-color);
     margin-bottom: 1rem;
 }
+.section__text {
+    color: var(--white-color);
+    text-align: justify;
+    margin-right: 2rem;
+}
 .section__img {
     width: 285px;
     border-radius: .5rem;
@@ -289,6 +306,74 @@ img {
         margin-right: auto;
     }
 }
+
+.s-footer {
+    width: 100%;
+    height: 270px;
+    background-color: beige;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+    height: 250px;
+    background-color:#0396A6;
+}
+
+.div-col {
+    position: relative; 
+    display: grid;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem ;
+    grid-template-columns: 70%;
+    background-color: var(--white-color);
+   
+}
+
+.col-head h2 {
+    position: inherit;
+    font-size: var(--h2-font-size);
+    color: var(--dark-color);
+    /* text-align: center; */
+}
+.col-head h2, p {
+    color: var(--dark-color);
+    font-size: var(--normal-font-size);
+}
+.col-text   {
+    padding-top: 1rem;
+}
+.social-icons {
+    display: flex;
+    
+    margin-top: 1rem;
+    align-items: center;
+    
+}
+.icons a {
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+
+}
+.icons a:hover {
+    background: lightseagreen;
+}
+.social-icons span {
+    font-size: 2rem;
+    padding-left: 1rem;
+    color: #0396A6;
+}
+
+
+
+
 
 
 
