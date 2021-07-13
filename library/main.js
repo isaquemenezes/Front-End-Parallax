@@ -28,9 +28,9 @@ gsap.from('.home__subtitle', {opacity:0, duration:3, delay: 1.1, y:30, ease:'exp
 gsap.from('.home__scroll', {opacity:0, duration:3, delay: 1.5, y:25, ease:'expo.out'});
 
 // scroll revel section
-const sr = ScrollReveal ({
+const sr = ScrollReveal({
     duration:2500,
-    resert:true
+    reset:true
 });
 
 // Data

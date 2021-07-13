@@ -72,7 +72,7 @@ img{
 
 .l-header{
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: transparent;
@@ -80,11 +80,14 @@ img{
 }
 /*===== NAVBAR =====*/
 .nav{
+   
     height: $header-height;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
+
+      
 
     &__menu{
         @media screen and(max-width: 768px){
@@ -98,6 +101,7 @@ img{
             text-align: center;
             z-index: var(--z-fixed);
             transition: .3s;
+            
         }
     }
     &__logo{
@@ -135,19 +139,19 @@ img{
         background-position: center;
 
         &-img1{
-            background-image: url('/assets/img/imgm1.png');
+            background-image: url('/library/img/imgm1.png');
             z-index: var(--z-normal);
         }
         &-img2{
-            background-image: url('/assets/img/imgm2.png');
+            background-image: url('/library/img/imgm2.png');
             z-index: var(--z-tooltip);
         }
         &-img3{
-            background-image: url('/assets/img/imgm3.png');
+            background-image: url('/library/img/imgm3.png');
             z-index: var(--z-fixed);
         }
         &-img4{
-            background-image: url('/assets/img/imgm4.png');
+            background-image: url('/library/img/imgm4.png');
             z-index: var(--z-fixed);
         }
     }
